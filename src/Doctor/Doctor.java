@@ -5,27 +5,44 @@
  */
 package Doctor;
 import Person.Person;
-import java.util.LinkedList;
 /**
  *
  * @author ameen
  */
 
 public class Doctor extends Person{
-    LinkedList<Doctor> list= new LinkedList<>();
-    public Doctor(int id, String name, String address) {
+   
+    private String qualfication;
+    private String hiredDate;
+
+    public Doctor() {
+        super();
+    }
+    
+     public Doctor( int id, String name, String address,String qualfication, String hiredDate) {
         super(id, name, address);
+        this.qualfication = qualfication;
+        this.hiredDate = hiredDate;
     }
-    public void AddDoctor(int id, String name, String address)
-    {
-        
-        Doctor D=new Doctor(id,name,address);
-        list.add(D);
+
+    public String getQualfication() {
+        return qualfication;
     }
-    public int NuberOfDoctor()
-    {
-        return list.size();
+
+    public void setQualfication(String qualfication) {
+        this.qualfication = qualfication;
     }
+
+    public String getHiredDate() {
+        return hiredDate;
+    }
+
+    public void setHiredDate(String hiredDate) {
+        this.hiredDate = hiredDate;
+    }
+
+   
+    
     
     
 }
