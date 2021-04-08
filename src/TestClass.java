@@ -16,6 +16,8 @@ public class TestClass {
         DoctorControl d=new DoctorControl();
         
         d.addDoctor();
+       d.PrintDoctor();
+        
     }
     
 }

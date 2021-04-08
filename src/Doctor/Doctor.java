@@ -41,6 +41,14 @@ public class Doctor extends Person{
         this.hiredDate = hiredDate;
     }
 
+    @Override
+    public String toString() {
+        super.toString();
+        return "Doctor{" + "qualfication=" + qualfication + ", hiredDate=" + hiredDate + '}';
+    }
+
+   
+
    
     
     
