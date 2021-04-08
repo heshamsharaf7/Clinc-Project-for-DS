@@ -71,6 +71,36 @@ public class PatientControl {
         return list.size();
     }
       
+      //function to print the specific patient by his/her id
+      
+        public void printPatient(int id)
+    {
+        if(nuberOfPatient()>0){
+        boolean check=false;
+        while(!check)
+        {
+            if(list.first().getId()==id)
+            {
+                check=true;
+                System.out.println(list.first().toString());
+                System.out.println("the data is deleted successfully ");
+                 return ;
+            }else 
+            {
+                list.rotate();
+            }
+            
+        }
+        if(!check )
+            {
+                System.out.println("the data is not exit ");
+            }
+    }else{
+            System.out.println("there is no data");}
+       
+      
+    }
+      
       // function to print all the data in the list 
        public void printPatientall()
        {
