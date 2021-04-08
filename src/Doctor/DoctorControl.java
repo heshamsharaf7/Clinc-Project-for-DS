@@ -33,7 +33,7 @@ public class DoctorControl {
        System.out.println("enter the doctor hiredDate pls:");
        d.setHiredDate(input.nextLine());
        
-        list.addFirst(d);
+        list.addLast(d);
         
     }
     
