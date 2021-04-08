@@ -5,17 +5,18 @@
  */
 package Doctor;
 
-import java.util.LinkedList;
+
 import java.util.Scanner;
-import DataStuctureClasses.DoublyLinkedList;
+
+import Patient.Patient;
+import Utilty.CircularlyLinkedList;
 
 /**
  *
  * @author Hesham
  */
 public class DoctorControl {
-   public   LinkedList<Doctor> list= new LinkedList<>();
-   DoublyLinkedList link=new DoublyLinkedList<>();
+    CircularlyLinkedList<Doctor> list=new CircularlyLinkedList<>();
    Scanner input =new Scanner(System.in);
     public void addDoctor()
     {
@@ -32,28 +33,88 @@ public class DoctorControl {
        System.out.println("enter the doctor hiredDate pls:");
        d.setHiredDate(input.nextLine());
        
-        list.add(d);
+        list.addFirst(d);
         
     }
     
     
-    public boolean removeDoctor(int id)
+      public void removeDoctor(int id)
     {
-        return true;
+        if(NuberOfDoctor()>0){
+        boolean check=false;
+        while(!check)
+        {
+            if(list.first().getId()==id)
+            {
+                check=true;
+                list.removeFirst();
+                System.out.println("the data is deleted successfully ");
+                 return ;
+            }else 
+            {
+                list.rotate();
+            }
+            
+        }
+        if(!check )
+            {
+                System.out.println("the data is not exit ");
+            }
+    }else{
+            System.out.println("there is no data");}
        
+      
     }
     public int NuberOfDoctor()
     {
         return list.size();
     }
-    public void PrintDoctor()
+     public void printDoctor(int id)
     {
-       int n=NuberOfDoctor();
-        for (int i = 0; i <n ; i++) {
-            System.out.println(list.getFirst().toString());
-            list.iterator();
+        if(NuberOfDoctor()>0){
+        boolean check=false;
+        while(!check)
+        {
+            if(list.first().getId()==id)
+            {
+                check=true;
+                System.out.println(list.first().toString());
+                System.out.println("the data is deleted successfully ");
+                 return ;
+            }else 
+            {
+                list.rotate();
+            }
+            
         }
+        if(!check )
+            {
+                System.out.println("the data is not exit ");
+            }
+    }else{
+            System.out.println("there is no data");}
+       
+      
+    }
+     
+      public void printAllDoctor()
+       {
         
+           
+           int n= NuberOfDoctor();
+           if( NuberOfDoctor() >0)
+           {
+           for (int i = 0; i <n ; i++)
+           {
+               list.first().toString();
+               list.rotate();
+           }
+       }else
+          {
+              System.out.println("there is no data");
+          }
+       }
+
     }
-    }
+    
 
