@@ -9,7 +9,7 @@ import Utilty.Person;
 
 /**
  *
- * @author ameen
+ * @author Ameen
  */
 public class Doctor extends Person{
     private String qualfication;
