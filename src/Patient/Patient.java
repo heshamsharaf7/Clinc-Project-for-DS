@@ -15,5 +15,9 @@ public class Patient extends Person {
     public Patient(int id, String name, String address) {
         super(id, name, address);
     }
+    public void AddPatient()
+    {
+        
+    }
     
 }
