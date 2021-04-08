@@ -22,12 +22,12 @@ public class PatientControl {
       public void addPatient()
     {
         Patient p=new Patient();
-        System.out.println("enter the doctor id pls:");
+        System.out.println("enter the Patient id pls:");
        p.setId(input.nextInt());
-       System.out.println("enter the doctor name pls:");
+       System.out.println("enter the Patient name pls:");
        p.setName(input.nextLine());
        p.setName(input.nextLine());
-       System.out.println("enter the doctor address pls:");
+       System.out.println("enter the Patient address pls:");
        p.setAddress(input.nextLine());
        
        list.addLast(p);

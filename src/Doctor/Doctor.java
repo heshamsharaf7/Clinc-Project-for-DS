@@ -12,6 +12,7 @@ import Utilty.Person;
  * @author Ameen
  */
 public class Doctor extends Person{
+    Person p=new Person();
     private String qualfication;
     private String hiredDate;
     public Doctor()
@@ -42,8 +43,14 @@ public class Doctor extends Person{
 
     @Override
     public String toString() {
-        System.out.println( super.toString()+"Doctor{" + "qualfication=" + qualfication + ", hiredDate=" + hiredDate + '}');
-          
+        
+       
+          System.out.print("the Doctor id:"+getId()+"\t\t\t");
+          System.out.print("the Doctor Nmae:"+getName()+"\t\t\n");
+          System.out.print("the Doctor Address:"+getAddress()+"\t\t");
+          System.out.print("the Doctor qualfication:"+qualfication+"\t\t\n");
+          System.out.println("the Doctor hiredDate:"+hiredDate+"\t\t\n");
+          System.out.println("*************************************************************************");
         return null;
     }
    

@@ -18,23 +18,23 @@ public class TestClass {
         PatientControl p=new PatientControl();
         DoctorControl d=new DoctorControl();
         
-//        p.addPatient();
-//          p.addPatient();
-//            p.addPatient();
-//        p.printPatientall();
-//        
-//       p.removePatient(1);
-//       
-//           p.printPatientall();
+        p.addPatient();
+          p.addPatient();
+            p.addPatient();
+        p.printPatientall();
+        
+       p.removePatient(1);
+       
+       p.printPatientall();
 
 //        
-        d.addDoctor();
-       
-        d.addDoctor();
-        d.addDoctor();
-        d.printAllDoctor();
-        d.removeDoctor(3);
-         d.printAllDoctor();
+//        d.addDoctor();
+//       
+//      d.addDoctor();
+//         d.addDoctor();
+//        d.printAllDoctor();
+//        d.removeDoctor(3);
+//         d.printAllDoctor();
         
     }
     

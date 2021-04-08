@@ -22,7 +22,10 @@ public class Patient extends Person {
       @Override
        public String toString() 
        {
-           System.out.println( super.toString());
+            System.out.print("the Patient id:"+getId()+"\t\t\t");
+          System.out.print("the Patient Nmae:"+getName()+"\t\t");
+          System.out.print("the Patient Address:"+getAddress()+"\t\t\n\n");
+           System.out.println("*******************************NEW PATIENT*********************************\n");
            return null;
        }
 
