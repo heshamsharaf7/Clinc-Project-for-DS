@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Person;
+package Utilty;
 
 /**
  *
@@ -44,15 +44,13 @@ public class Person {
         return address;
     }
 
+    @Override
+    public String toString() {
+        return "Person{" + "id=" + id + ", name=" + name + ", address=" + address + '}';
+    }
+
     public void setAddress(String address) {
         this.address = address;
     }
-
-    @Override
-    public String toString() {
-        return  "id=" + id + ", name=" + name + ", address=" + address ;
-    }
-
-    
     
 }

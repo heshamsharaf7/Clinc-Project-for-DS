@@ -5,19 +5,31 @@
  */
 
 package Patient;
-import Person.Person;
+import Utilty.Person;
 /**
  *
  * @author ameen
  */
 public class Patient extends Person {
-    
+
+    public Patient() {
+    }
+
     public Patient(int id, String name, String address) {
         super(id, name, address);
     }
-    public void AddPatient()
-    {
-        
-    }
+
+      @Override
+       public String toString() 
+       {
+           System.out.println( super.toString());
+           return null;
+       }
+
+   
+    
+    
+    
+  
     
 }

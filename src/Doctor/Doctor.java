@@ -43,8 +43,8 @@ public class Doctor extends Person{
 
     @Override
     public String toString() {
-        super.toString();
-        return "Doctor{" + "qualfication=" + qualfication + ", hiredDate=" + hiredDate + '}';
+        System.out.println( super.toString());
+        return "qualfication=" + qualfication + ", hiredDate=" + hiredDate ;
     }
 
    

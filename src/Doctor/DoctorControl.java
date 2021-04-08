@@ -33,6 +33,7 @@ public class DoctorControl {
        d.setHiredDate(input.nextLine());
        
         list.add(d);
+        
     }
     
     

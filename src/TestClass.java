@@ -1,5 +1,6 @@
 
 import Doctor.DoctorControl;
+import Patient.PatientControl;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -13,10 +14,20 @@ import Doctor.DoctorControl;
  */
 public class TestClass {
     public static void main(String[] args) {
-        DoctorControl d=new DoctorControl();
+        PatientControl p=new PatientControl();
         
-        d.addDoctor();
-       d.PrintDoctor();
+//        p.addPatient();
+//          p.addPatient();
+//            p.addPatient();
+       // p.printPatientall();
+        
+     //  p.removePatient(1);
+       
+         //  p.printPatientall();
+//        DoctorControl d=new DoctorControl();
+//        
+//        d.addDoctor();
+//       d.PrintDoctor();
         
     }
     
