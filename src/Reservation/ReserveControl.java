@@ -16,14 +16,15 @@ import java.util.Scanner;
 public class ReserveControl {
      CircularQueue<Reservation> list= new CircularQueue<>();
      Scanner input =new Scanner(System.in);
+      PatientControl p1=new PatientControl();
+        DoctorControl d1=new DoctorControl();
       public boolean isEmpty(){return list.isEmpty();}
        public int numberOfReserve()
     {
         return list.size();
     }
        public void addReserve(){
-        PatientControl p1=new PatientControl();
-        DoctorControl d1=new DoctorControl();
+       
         p1.addPatient();
         d1.addDoctor();
         Reservation r=new Reservation ();
@@ -37,6 +38,8 @@ public class ReserveControl {
         list.enqueue(r);
     }
         public Reservation deleteReserve(int id){
+            p1.removePatient(id);
+            d1.removeDoctor(id);
              if(numberOfReserve()>0){
         boolean check=false;
         while(!check)
@@ -67,6 +70,8 @@ public class ReserveControl {
          return null;
         }
          public void printReserve(int id) {
+             p1.printPatient(id);
+             d1.printDoctor(id);
         if(numberOfReserve()>0){
         boolean check=false;
         while(!check)
@@ -92,9 +97,10 @@ public class ReserveControl {
        
       
     }
-           public void printPatientall()
+           public void printAllReserve()
        {
-        
+        p1.printPatientall();
+        d1.printAllDoctor();
            
            int n=numberOfReserve();
            if(numberOfReserve() >0)

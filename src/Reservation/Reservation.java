@@ -67,7 +67,14 @@ private int price;
    
     @Override
     public String toString() {
-        return  "patintInfo=" + patintInfo + ", doctorInfo=" + doctorInfo + ", id=" + id + ", reserveDate=" + reserveDate + ", price=" + price + '}';
+        //System.out.print("patintInfo="+ patintInfo+"\t\t\t");
+        //System.out.print("doctorInfo="+ doctorInfo+"\t\t\t");
+          System.out.print("the Reserve id:"+getId()+"\t\t\t");
+          System.out.print("the Reserve Date :"+getReservrDate()+"\t\t");
+          System.out.print("the Reserve Price:"+getPrice()+"\t\t\n\n");
+           System.out.println("*******************************NEW RESERVATION*********************************\n");
+           return null;
+       // return  "" + patintInfo + ", doctorInfo=" + doctorInfo + ", id=" + id + ", reserveDate=" + reserveDate + ", price=" + price + '}';
     }
 
    /** void getPrice(String nextLine) {
