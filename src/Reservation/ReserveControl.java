@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Msarat
+ * @author Khaled
  */
 public class ReserveControl {
      CircularQueue<Reservation> list= new CircularQueue<>();

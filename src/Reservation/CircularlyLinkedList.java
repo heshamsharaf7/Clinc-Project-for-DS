@@ -7,7 +7,7 @@ package Reservation;
 
 /**
  *
- * @author Msarat
+ * @author Khaled
  */
 public class CircularlyLinkedList<E> {
       private Node<E> tail = null;

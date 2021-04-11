@@ -10,7 +10,7 @@ import Patient.PatientControl;
 
 /**
  *
- * @author Msarat
+ * @author Khaled
  */
 public class Reservation {
     

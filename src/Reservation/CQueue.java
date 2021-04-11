@@ -7,7 +7,7 @@ package Reservation;
 
 /**
  *
- * @author Msarat
+ * @author Khaled
  */
 public interface CQueue<E> extends  Queue<E> {
      void rotate();

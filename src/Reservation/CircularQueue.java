@@ -7,7 +7,7 @@ package Reservation;
 
 /**
  *
- * @author Msarat
+ * @author Khaled
  * @param <E>
  */
 public class CircularQueue<E> implements CQueue<E> {

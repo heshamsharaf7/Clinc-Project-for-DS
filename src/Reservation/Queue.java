@@ -7,7 +7,7 @@ package Reservation;
 
 /**
  *
- * @author Msarat
+ * @author Khaled
  */
 public interface Queue <E>{
         boolean isEmpty();
