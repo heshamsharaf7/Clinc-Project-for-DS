@@ -102,6 +102,22 @@ public class PatientControl {
     }
       
       // function to print all the data in the list 
+        public void updataPatient( int id)
+        {
+          removePatient( id);
+          Patient p=new Patient();
+          p.setId(id);
+          System.out.println("enter the Patient id pls:");
+       p.setId(input.nextInt());
+       System.out.println("enter the Patient name pls:");
+       p.setName(input.nextLine());
+       p.setName(input.nextLine());
+       System.out.println("enter the Patient address pls:");
+       p.setAddress(input.nextLine());
+       
+       list.addLast(p);
+          
+        }
        public void printPatientall()
        {
         
