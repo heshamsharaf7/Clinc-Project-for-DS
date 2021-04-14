@@ -59,10 +59,11 @@ public class TestClass {
               System.out.println("4- Patients");
               System.out.println("5- Add Patient");
               System.out.println("6- Remove Patient");
-               System.out.println("7- Reservation");
-                System.out.println("8- Add Reserve");
-                 System.out.println("9- Remove Reserve");
-                System.out.println("10- Exit");
+              System.out.println("7- Update Patient");
+              System.out.println("8- Reservation");
+              System.out.println("9- Add Reserve");
+              System.out.println("10- Remove Reserve");
+              System.out.println("11- Exit");
             
              
               choice = sc.nextInt();
@@ -93,16 +94,19 @@ public class TestClass {
                                    p.removePatient(1);  
                             break;
                              case 7:
-                                   r.printAllReserve();
+                                   p.updataPatient(1);  
                             break;
                              case 8:
-                                   r.addReserve();  
+                                   r.printAllReserve();
                             break;
                              case 9:
-                                   r.deleteReserve(81);  
+                                   r.addReserve();  
+                            break;
+                             case 10:
+                                   r.deleteReserve(1);  
                             break;
               }
-       } while(choice !=10);
+       } while(choice !=11);
         
     }
     

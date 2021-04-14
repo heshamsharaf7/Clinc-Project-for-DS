@@ -5,8 +5,8 @@
  */
 package Reservation;
 
-import Doctor.*;
-import Patient.*;
+import Doctor.DoctorControl;
+import Patient.PatientControl;
 import java.util.Scanner;
 
 /**
@@ -18,8 +18,6 @@ public class ReserveControl {
      Scanner input =new Scanner(System.in);
       PatientControl p1=new PatientControl();
         DoctorControl d1=new DoctorControl();
-        Patient p=new Patient();
-        Doctor d=new Doctor();
       public boolean isEmpty(){return list.isEmpty();}
        public int numberOfReserve()
     {
@@ -27,18 +25,8 @@ public class ReserveControl {
     }
        public void addReserve(){
        
-        System.out.println("enter the patient id");
-         int id=input.nextInt();
-         if(p.getId()==id)
-         {
-             p1.printPatient(id);
-         }
-          System.out.println("enter the Doctor id");
-         int dID=input.nextInt();
-         if(d.getId()==id)
-         {
-             d1.printDoctor(id);
-         }
+        p1.addPatient();
+        d1.addDoctor();
         Reservation r=new Reservation ();
            System.out.println("enter the Reserve id pls:");
        r.setId(input.nextInt());

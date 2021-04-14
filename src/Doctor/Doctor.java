@@ -50,7 +50,7 @@ public class Doctor extends Person{
           System.out.print("the Doctor Address:"+getAddress()+"\t\t");
           System.out.print("the Doctor qualfication:"+qualfication+"\t\t\n");
           System.out.println("the Doctor hiredDate:"+hiredDate+"\t\t\n");
-          System.out.println("*************************************************************************");
+          System.out.println("*************************************************************************"); 
         return null;
     }
    
